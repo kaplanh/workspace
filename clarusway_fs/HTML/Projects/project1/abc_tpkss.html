@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Assignment</title>
     <style> 
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+       
         body {
             padding: 50px;
             border-top: 2px solid;
@@ -35,21 +31,20 @@
             width: 150px;
         }
 
-        .Onay input{
-           border: 1px solid black;
-           margin: 10px;
-           padding: 5px;
-           border-radius: 5px; 
-        }
+        
 
-        #divkis label{
-            display: inline-block;
-            vertical-align: middle;
-            margin: 10px;
-        }
+       
+
+        
+        
 
         #diger input, select{
             margin-left: 110px;
+
+        }
+
+        #prg_dil{
+          
 
         }
 
@@ -68,7 +63,7 @@
   </head>
 
   <body>
-    <div class="countainer">
+    
       <h2>ABC Tasarım Programi Kurulum ve Satış Sözleşmesi</h2>
       <form action="result.html" method="get"></form>
 
@@ -76,21 +71,20 @@
         <fieldset>
           <legend>Sözleşme Onay</legend>
           <br />
-          <div id="divform">
+          <div>
             <input type="checkbox" name="sözlesme_onayi" id="sözlesme_onay" />
             <label for="sözlesme_onay"
               >Aşagidaki Bilgilerin dogrulugunu kabul ediyorum ve sözlesmeyi
-              onayliyorum.</label
-            >
+              onayliyorum.</label>
             <br />
-            <input class="buttons" type="submit" value="Formu Kaydet" />
+            <input type="submit" value="Formu Kaydet" />
             <input type="reset" value="Formu Temizle" />
           </div>
         </fieldset>
       </div>
 
-      <div id="kisdiv">
-        <fieldset id="field">
+      <div>
+        <fieldset>
           <legend>Kişisel Bilgiler</legend>
           <br />
 
@@ -117,7 +111,7 @@
           </div>
 
           <div>
-            <label class="Kis-label" for="age">Yaş</label>
+            <label id="age" class="Kis-label" for="age">Yaş</label>
             <input type="number" name="Age" id="age" />
           </div>
 
@@ -200,7 +194,8 @@
             </div>
           </div>
       <div>
-        <label for="diller">Programlama Dilleri</label>
+        <label class="sektör" id="prg_dil" for="diller">Programlama Dilleri</label>
+        <div class="input-right"> 
         <select name="prog_dilleri" id="diller" size="5" multiple>
           <option value="C#">C#</option>
           <option value="PHP">PHP</option>
@@ -210,6 +205,7 @@
           <option value="Linux">Linux</option>
           <option value="Python">Python</option>
         </select>
+        </div>
       </div>
 
       <div>
@@ -257,6 +253,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus si
           />
         </fieldset>
       </div>
-    </div>
+    
   </body>
 </html>
