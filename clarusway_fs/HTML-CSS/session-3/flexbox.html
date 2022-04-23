@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <h1>flex-direction</h1>
+    <hr>
+    <div class="flex-container0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+
+      <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>  
+      
+      <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+
+      <div class="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+
+      <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+
+     
+      <h1>
+        Flexbox <code>flex-wrap</code> – Forcing Items to Break
+      </h1>
+      <hr>
+      
+      <h2 id="nowrap">
+        nowrap (default)
+      </h2>
+      
+      <div class="flexbox flexbox-nowrap">
+        <div class="item item-A">
+          <h2>A</h2>
+        </div>
+        <div class="item item-B">
+          <h2>B</h2>
+        </div>    
+        <div class="item item-C">
+          <h2>C</h2>
+        </div>  
+        <div class="item item-D">
+          <h2>D</h2>
+        </div>    
+      </div>
+      
+      <h2 id="wrap">
+        wrap
+      </h2>
+      
+      <div class="flexbox flexbox-wrap">
+        <div class="item item-A">
+          <h2>A</h2>
+        </div>
+        <div class="item item-B">
+          <h2>B</h2>
+        </div>    
+        <div class="item item-C">
+          <h2>C</h2>
+        </div>  
+        <div class="item item-D">
+          <h2>D</h2>
+        </div>    
+      </div>
+      
+      <h2 id="flex-wrap-reverse">
+        wrap-reverse
+      </h2>
+      
+      <div class="flexbox flexbox-wrap-reverse">
+        <div class="item item-A">
+          <h2>A</h2>
+        </div>
+        <div class="item item-B">
+          <h2>B</h2>
+        </div>    
+        <div class="item item-C">
+          <h2>C</h2>
+        </div>  
+        <div class="item item-D">
+          <h2>D</h2>
+        </div>    
+      </div>
+
+
+      <div class="flex-container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+      <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+      <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+      <div class="flex-container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+      <div class="flex-container9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+      <div class="flex-container10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+
+      <h1>The flex-flow row wrap</h1>
+
+
+<div class="flex-container">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>  
+  <div>D</div>
+  <div>E</div>
+</div>
+
+<h1>The flex-flow column wrap</h1>
+
+
+<div class="flex-container-column">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>  
+  <div>D</div>
+  <div>E</div>
+</div>
+<h1>The flex-flow column wrap-reverse</h1>
+
+<div class="flex-container-column-wrapreverse">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>  
+  <div>D</div>
+  <div>E</div>
+</div>
+
+<h1>
+    Flexbox <code>justify-content</code> – Aligning Main Axis Items
+  </h1>
+  
+  <h2 id="flex-start">
+    flex-start (default)
+  </h2>
+  
+  <div class="flexbox flexbox-flexstart">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="flex-end">
+    flex-end
+  </h2>
+  
+  <div class="flexbox flexbox-flexend">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="center">
+    center
+  </h2>
+  
+  <div class="flexbox flexbox-center">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="space-betweeen">
+    space-betweeen
+  </h2>
+  
+  <div class="flexbox flexbox-spacebetween">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="space-around">
+    space-around
+  </h2>
+  
+  <div class="flexbox flexbox-spacearound">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+
+  <h1>
+    Flexbox <code>align-items</code> – Aligning Cross Axis Items Within a Container
+  </h1>
+  
+  <h2 id="stretch">
+    stretch (default)
+  </h2>
+  
+  <div class="flexbox">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2>
+    flex-start
+  </h2>
+  
+  <div class="flexbox flexbox-flexstart">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="flex-end">
+    flex-end
+  </h2>
+  
+  <div class="flexbox flexbox-flexend">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="center">
+    center
+  </h2>
+  
+  <div class="flexbox flexbox-center">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+  <h2 id="baseline">
+    baseline
+  </h2>
+  
+  <div class="flexbox flexbox-baseline">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+  </div>
+  
+
+  <h1>
+    Flexbox <code>align-content</code>
+  </h1>
+  
+  <h2 id="stretch">
+    stretch
+  </h2>
+  
+  <div class="flexboxa flexbox-stretch">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+    <div class="item item-D">
+      <h2>D</h2>
+    </div>    
+  </div>
+  
+  <h2 id="flex-start">
+    flex-start
+  </h2>
+  
+  <div class="flexboxa flexbox-flexstart">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+    <div class="item item-D">
+      <h2>D</h2>
+    </div>    
+  </div>
+  
+  <h2 id="flex-end">
+    flex-end
+  </h2>
+  
+  <div class="flexboxa flexbox-flexend">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+    <div class="item item-D">
+      <h2>D</h2>
+    </div>    
+  </div>
+  
+  <h2 id="center">
+    center
+  </h2>
+  
+  <div class="flexboxa flexbox-center">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+    <div class="item item-D">
+      <h2>D</h2>
+    </div>    
+  </div>
+  
+  <h2 id="space-betweeen">
+    space-betweeen
+  </h2>
+  
+  <div class="flexboxa flexbox-spacebetween">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+    <div class="item item-D">
+      <h2>D</h2>
+    </div>    
+  </div>
+  
+  <h2 id="space-around">
+    space-around
+  </h2>
+  
+  <div class="flexboxa flexbox-spacearound">
+    <div class="item item-A">
+      <h2>A</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+    </div>  
+    <div class="item item-D">
+      <h2>D</h2>
+    </div>    
+  </div>
+
+  <h1>The order Property</h1>
+
+<p>Use the order property to sort the flex items as you like:</p>
+
+<div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div> 
+  <div style="order: 1">4</div>
+</div>
+  
+<h1>
+    Flexbox <code>flex-grow</code>  – The Ability To Grow
+  </h1>
+  
+  <h2 id="stretch">
+    flex-grow: 0
+  </h2>
+  
+  <div class="flexbox flexbox-grow-0">
+    <div class="item item-A">
+      <h2>A)</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B)</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C)</h2>
+    </div>  
+  </div>
+  
+  <h2>
+    flex-grow: 1
+  </h2>
+  
+  <div class="flexbox flexbox-grow-1">
+    <div class="item item-A">
+      <h2>A)</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B)</h2>
+    </div>    
+    <div class="item item-C">
+      <h2>C)</h2>
+    </div>  
+  </div>
+  
+  <h2>
+    flex-grow: 1 – C) has flex-grow: 3
+  </h2>
+  
+  <div class="flexbox flexbox-grow-1">
+    <div class="item item-A">
+      <h2>A)</h2>
+    </div>
+    <div class="item item-B">
+      <h2>B)</h2>
+    </div>    
+    <div class="item item-C item-grow-3">
+      <h2>C)</h2>
+    </div>  
+  </div>
+
+  <h1>
+    Flexbox <code>flex-shrink</code>  – The Ability To Shrink
+  </h1>
+  <h2>Please resize the browser window to see how the items shrink</h2>
+  
+  <h2 id="stretch">
+    flex-shrink: 1 (default)
+  </h2>
+  
+  <div class="flexbox flexbox-shrink-1">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+  <h2>
+    flex-shrink: 0
+  </h2>
+  
+  <div class="flexbox flexbox-shrink-0">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+  
+  <h2>
+    flex-shrink: 1 – C) has flex-shrink: 3
+  </h2>
+  
+  <div class="flexbox flexbox-shrink-1-1-3">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+
+  <h1>
+    Flexbox <code>flex-basis</code>  – Default Item Size
+  </h1>
+  
+  <h2 id="stretch">
+    flex-basis: auto (default)
+  </h2>
+  
+  <div class="flexbox flexbox-basis-auto">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+  <h2>
+    flex-basis: 0
+  </h2>
+  
+  <div class="flexbox flexbox-basis-0">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+  <h2>
+    flex-basis: 15em
+  </h2>
+  
+  <div class="flexbox flexbox-basis-em">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+
+  <h1>
+    Flexbox <code>flex-basis</code>  – Default Item Size
+  </h1>
+  
+  <h2 id="stretch">
+    flex-basis: auto (default)
+  </h2>
+  
+  <div class="flexbox flexbox-basis-auto">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+  <h2>
+    flex-basis: 0
+  </h2>
+  
+  <div class="flexbox flexbox-basis-0">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+  <h2>
+    flex-basis: 15em
+  </h2>
+  
+  <div class="flexbox flexbox-basis-em">
+    <div class="item item-A">
+      <h2>A</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="item item-B">
+      <h2>B</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>    
+    <div class="item item-C">
+      <h2>C</h2>
+      <p>Lorem ipsum dolor sit amet.</p>    
+    </div>  
+  </div>
+  
+</body>
+</html>
