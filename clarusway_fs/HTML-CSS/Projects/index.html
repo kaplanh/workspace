@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form (HC-01)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><h1>NET<span>FLIX</span> </h1></header>
+    <p id="p1">Thank you for signing up at Netflix. Tell us more about your self</p>
+    <div id="div1">
+        <form action="./result.html" method="get" ></form>
+        <p>Name</p>
+        <input type="text" name="name" id="isim" placeholder="Enter your name">
+        <p>Age</p>
+        <input type="number" name="age" id="yas" placeholder="Age">
+        <p>Email</p> 
+        
+        <input type="email" name="email" id="mail" placeholder="Enter your email">
+        <p>Content type</p>
+        <select name="content_typ" id="icerik" size="1" >
+        <option value="series">Series</option>
+        <option value="films">Films</option>
+        </select>
+        <br><br>
+        <label for="">Movi type</label>
+        <br>
+        <input type="radio" name="Comedy" id="komedi" value="">
+        <label for="komedi">Comedy</label>
+        <br>
+        <input type="radio" name="Comedy" id="aksiyon" value="">
+        <label for="aksiyon">Action</label>
+        <br>
+        <input type="radio" name="Comedy" id="romantik" value="" checked>
+        <label for="romantik">Romance</label>
+        <br><br>
+        <label for="">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="erkek">        
+        <label for="erkek">Male</label>
+        <br>
+        <input type="radio" name="gender" id="kadin">
+        <label for="kadin">Female</label>
+        <br>
+        <input type="radio" name="gender" id="diger">
+        <label for="diger">Other</label>
+        <br><br>
+        <label for="geri_dönüsüm">Feed back</label>
+        <br>
+        <input type="textarea" name="feed_back" id="geri_dönüsüm" placeholder="Any comment">
+        <br><br>
+        <input type="submit" value="Submit">
+
+
+
+
+
+
+        </div>
+</body>
+</html>
