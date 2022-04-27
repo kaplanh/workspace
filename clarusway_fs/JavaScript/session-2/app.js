@@ -102,7 +102,7 @@
   
 //   console.log(myCar)
 
-// // console.log(a);
+ console.log(a);
 // // var a = 5;
 // // var aa = 4;
 // // console.log(a);
