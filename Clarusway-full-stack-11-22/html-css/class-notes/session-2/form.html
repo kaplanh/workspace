@@ -90,7 +90,7 @@
         <div>
             <label for="seker"> Hangi tatlıyı seversiniz:</label>
             <br>
-            <select name="seçilen_tatlılar" id="seker" size="7" multiple>
+            <select name="seçilen_tatlılar" id="seker" size="3" multiple>
 
                 <option value="Sütlaç">Sütlaç</option>
                 <option value="Keşkül">Keşkül</option>
@@ -106,13 +106,13 @@
             <label for="seker2"> Hangi tatlıyı seversiniz:</label>
             <br>
 
-            <select name="tatlılar" id="seker2" size="10">
+            <select name="tatlılar" id="seker2" size="1">
 
                 <optgroup label="Sütlü tatlılar">
-                <option value="Sütlaç">Sütlaç</option>
+                <option value="Sütlaç" disabled>Sütlaç</option> <!--disabled: gösteriyor ama sectirmiyor-->
                 <option value="Keşkül">Keşkül</option>
                 <option value="Süpangle">Süpangle</option>
-                <option value="Soguk baklava">Soguk baklava</option>
+                <option value="Soguk baklava" selected>Soguk baklava</option> <!--selected:cubukta en üstte secili olarak gözükmesini sagliyor-->
                 </optgroup>
 
                 <optgroup label="Şerbetli tatlılar">
