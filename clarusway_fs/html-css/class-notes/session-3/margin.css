@@ -1,7 +1,7 @@
 .demo {
     background-color: aqua;
     width: 80%;
-    margin: 50px 40px;
+    margin: 50px 40px; /*1.deger üstten/alttan,2. deger sagdan/soldan uzaklas demek*/
 }
 
 .one {
@@ -15,7 +15,9 @@
     /* width: 50px; */
     /* margin: 50px; */
     /* margin: 50px 20% ; */
+    /*px sabit degerdir %de responsive yani sayfa daraltilip genisletildiginde orana göre kücülür büyür*/
     margin: inherit;
+    /*parent den yani burda demo daki degerden alir*/
 }
 
 .three {

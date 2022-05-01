@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +7,59 @@
     <title>Linkler</title>
 </head>
 <body>
-    <p id="paragraf1" >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p id="paragraf2" style="background-color: goldenrod;">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
+    <p id="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <!-- <p id="paragraf1"></p> bir elemente id böyle atanir -->
 
-    <a href="https://clarusway.com">Clarusway</a>
-    <br> <br>
-    <a href="https://google.com" target="_blank">Google'a Git</a>
+    <p id="paragraf2" style="background-color: goldenrod;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <!-- <p id="paragraf2" style="background-color: goldenrod;"></p> ile tüm paragrafin backgroundunu renklendirdim -->
+
     <br>
 
-    <a href="https://google.com" target="_blank">
-        <img src="./img/resim2.jpg" alt="" width="250px">
-    </a>
+    <a href="https://clarusway.com">Clarusway</a>
+    <!-- Clarusway görünen kisim href="https://clarusway.com" linkin gidecegi yeri belirtir -->
+
+
+    <br><br>
+
+    <a href="https://google.com" target="_blank">Googl'a Git</a>
+    <!-- target="_blank" ile tikladigimda linkin yeni bir sekmede acilmasini saglar -->
+
+
+    <br>
+
+    <a href="https://google.com" target="_blank"><img src="./resim3.jpg" alt="" width="300px"></a>
+    <!--fotografi linkledim fotoya tiklayinca hedef linke giderim-->
+
     <br>
     <a href="table.html">Tablolara git</a>
 
+    <br>
+
     <div>
         <a href="">Linke git</a>
+        <!-- linke git yazisi cikar fakat hedef olmadigindan nereye gidecegini bilemez -->
     </div>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut, deserunt sit et natus distinctio fugiat beatae debitis quis quia quaerat, ratione minus magni error. Soluta, itaque? Molestiae, sit libero.
-    </p>
 
-    <a href="#paragraf1">başa dön</a>
-    <br> <br>
-    <a href="#paragraf2">ikinci paragrafa git</a>
-    <br> <br> <br>
-    <a href="./table.rar">Dosyayı indir</a>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores non quia facere, excepturi illo recusandae earum a tenetur reiciendis!</p>
     
+    <a href="#paragraf1">Basa Dön</a>
+    <br><br>
+    <a href="#paragraf2">Ikinci Paragrafa git</a>
+    <!-- linke adres olarak yukarda id atayip basina # ekleyerek(#paragraf1)gibi istedigimiz yere gidebiliriz -->
 
-    
+    <br><br><br>
+
+    <a href="./table.rar">Dosyayi indir</a>
+
+    <!-- adres olarak bir .rar dosyasinin linkini verdigimizdede tiklandiginda acamayacagi icin o dosyanin inmesini saglayabiliriz -->
+
 </body>
 </html>
