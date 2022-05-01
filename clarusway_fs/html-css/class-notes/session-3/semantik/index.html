@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic elementler</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- non-Semantic elementler:div,span -->
+    <!-- Semantic elementler:Form,Table,section:dökümanlar,content grubu,Article:contentler,Header:basliklar,nav:linkler,footer:contact bilgileri iletisim bilgileri,Main hem bize hemde browser a birseyler ifade ediyor -->
+</head>
+<body>
+    <!--<header>: Sitenin en üst kısmını içine alır.-->
+    <header>
+        <h1>VoltranClub</h1>
+    </header>
+    <!-- emmet section.banner>img-->
+
+    <!--<section>: Genel bölümleme öğesidir.-->
+
+    <section class="banner">
+        <img src="./images/voltran.jpg" alt="Voltran">
+    </section>
+
+    <!--<nav>: Menüler,linkler içindir.-->
+
+    <nav class="main-naw">
+        <!--ul>li*4>a-->
+       <ul>
+           <!--daha sonra link vermek icin # ile yer ayiriyormusum gibi düsün-->
+           <li><a href="#" class="join">Join the Club</a></li>
+           <li><a href="#">Latest News</a></li>
+           <li><a href="#">New Episodes</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+    </nav>
+
+    <main>
+        <!--<article>: Makale, deneme tarzı yazıları kapsar.-->
+        <article>
+            <h2>It's me, Voltran</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, officia blanditiis? Cumque, voluptatem. Quos voluptate autem ullam repellat cum, enim perspiciatis quisquam cupiditate harum a, repudiandae deleniti quis atque dolorem.</p>
+
+        </article>
+        <!--ul>li*2>img>-->
+        <ul class="images">
+            <li><img src="./images/voltran2.jpg" alt="voltran images"></li>
+            <li><img src="./images/voltran3.jpg" alt="voltran images"></li>
+        </ul>
+
+    </main>
+    <section class="join">
+        <h2>Join Today!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, laborum beatae. Soluta, ipsa eaque impedit at inventore repellendus doloremque, labore numquam cum minus porro? Quo aperiam magnam molestiae ad perferendis.</p>
+
+    
+    <form action="#">
+        <input type="email" name="email" id="" placeholder="Type email & click send" required >
+        <input type="submit" name="Send" id="submit">
+    </form>
+    
+    </section>
+    <footer>
+        <!--<footer>: Sitelerin en alt kısmını içine alır.
+-->
+        <!--p.copyright ile class i ile birlikte p tag i acilir-->
+        <p class="copyright">Copyright &copy; 2022 
+            VoltranClub</p>
+            <!--&copy; yada $#169;  -->
+
+    </footer>
+
+    <!-- <header>: Sitenin en üst kısmını içine alır.
+<nav>: Menüler içindir.
+<section>: Genel bölümleme öğesidir.
+<article>: Makale, deneme tarzı yazıları kapsar.
+<aside>: Ana içerikten ayrı yazılan kısımdır.
+<figure>: Çeşitli medya içeriği gruplarını belirler.
+<figcaption>: <figure> elementinin başlığını belirler.
+<footer>: Sitelerin en alt kısmını içine alır.
+<details>: Detay bilgisi içerir.
+<summary>: Detay bilgisi başlığını içerir.
+<mark>: Yazı içerisinde özellikle üstünde durulan kelimeleri belirler.
+<time>: Tarih, saat verilerini kapsar.-->
+</body>
+</html>
