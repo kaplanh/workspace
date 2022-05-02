@@ -5,6 +5,63 @@
     padding: 0;
 } */
 /*bir projeye baslarken böyle baslar ve sonra degerleri biz degistiririz */
+/* *******
+   colors
+   *******
+/* renklerin ifade sekilleri 
+names
+rgb
+hex
+hsl
+rgba
+hsla values
+
+1-names:standart 140 renk ismi vardir  background-color:blue;
+
+2-rgb(red,green,blue) 
+rgb(255, 0, 0)--->red/ rgb(0, 255, 0)--->green/ rgb(0,,0,255)---->blue/ rgb(0, 0, 0)---->black/ rgb(255, 255, 255)--->white
+
+3-hex #ff0000--->red/ #00ff00--->green/ #0000ff--->blue/#ffffff--->black/#000000--->white f in kücük büyük olmasi önemli degil
+
+4-hsl(hue(renk),saturation(doygunluk),lightness(parlaklik))
+hue:0 dan 360 dogru ilerliyor 0:red,120:green, 240:blue
+saturation:0%den 100% e dogru doygunluk oranini artirir 100%rengin kendini verir
+lightness: 0% siyah, 50% ne siyah ne beyaz,100% beyaz 50% rengin kendini verir
+color:hsl(0,100%,50%)--->red/color:hsl(120,100%,50%)--->green/color:hsl(240,100%,50%)--->blue/color:hsl(0,0%,100%)--->white
+
+5-rgba(red,green,blue,alpha) alpha 0 ile 1 arasinda transparanlik acik koyu yapmaya yarar 0 full transparan 1 sifir transparan
+rgba(0,255,0,0,1) acik yesil %10 su karistirmisiz gibi düsünebiliriz
+rgba(0,255,0,0,3) orta yesil
+rgba(0,255,0,0,7) koyu yesil
+
+6-hsl(hue(renk),saturation(doygunluk),lightness(parlaklik),alpha(transparanlik) rgba ile ayni mantik
+hsla(240,100%,50%,0,1) acik mavi
+hsla(240,100%,50%,0,7) kendi rengine yakin koyulukta mavi
+
+
+;*/
+
+/*  
+********
+Border
+********
+1-border-style: dotted,dashed,insed..none,hidden
+not: border-style: ridge dashed solid double; üst-sag-alt-sol
+2-border-width: 10px tüm kenarlar/ 2px 5px alt-üst,sag-sol/2px 5px 3px üst,sag-sol,alt/3px 10px 7px 15px; genisligi
+3-border-color:double-button
+*** shorthand(kisa gösterim):border:5px solid blue;
+
+*/
+
+
+/*  
+*************
+border-radius
+************* 
+border-radius:5px;(köseleri kiviriyor)
+*/
+
+
 
 body {
     /* background-color: #85bb65; */
@@ -16,14 +73,14 @@ h1 {
 }
 
 #box1 {
-    border-style: solid dotted;/*üst/alt-sag/sol*/
-    border-width: 10px 20px ;
+    border-style: solid dotted groove;/*üst/alt-sag/sol*/
+    border-width: 10px 10px ;
     border-color: green red;
 }
 
 #box2 {
     border:5px solid blue;
-    /* border-radius: 10px 20px; */
+    border-radius: 10px 20px;
 }
 
 #box3 {
@@ -39,11 +96,14 @@ h1 {
 }
 
 .box5 {
-    background-color: hsla(240, 100%, 50%, 0.7);
+    background-color: hsla(240, 100%, 50%, 0.1);
     color:#B8538A;
+    border-style:ridge;
+
 }
 
 div {
     border-radius: 10px;
     border: 5px solid red;
 }
+

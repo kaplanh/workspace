@@ -1,3 +1,25 @@
+/* 
+*******
+margin
+*******
+border ile kenar arasindaki bosluk
+border:auto default
+-/+  px,rem,em,cm 
+50% oran
+inherit:icinde oldugu bir üst kutudan miras alir  yani onun degerlerine göree haraeket eder
+div{ margin:20px;}
+div p{margin:inherit}
+p div in degeri yani 20px i alir kullanir)
+margin-top: 50px; border ile body arasinda 50px bosluk birakir body den uzaklasir
+margin-bottom: alttan
+margin-right: sagdan
+margin-left:soldan
+
+***shorthand: margin:50px 10px 150px 50px;(üst-sag-alt-sol)
+
+*/
+
+
 .demo {
     background-color: aqua;
     width: 80%;
