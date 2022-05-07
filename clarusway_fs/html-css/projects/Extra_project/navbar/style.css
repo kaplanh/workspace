@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 0;
+    list-style-type: none ;
+    transition: 1s ease;
+}
+
+li{
+    margin: 0 10px;
+    color: white;
+}
+
+input{
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+input:checked ~ ul{
+    width: 350px; 
+}
+/* ~ : input:checked dan sonraki tüm ul lericin +:ilk ul icin kullanilir*/
+
+span{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 20px;
+    /* pointer-events: none; */
+    transition: 0.5s ease;
+}
+
+span:nth-child(3){
+    top: 25px; 
+}
+
+span:nth-child(2){
+    top: 40px;
+}
+
+input:checked ~ span:nth-child(3){
+    top: 32px;
+    left: 20px;
+    transform: rotate(45deg);
+    background-color: yellowgreen;
+}
+
+input:checked ~ span:nth-child(2){
+    top: 32px;
+    left: 20px;
+    transform: rotate(-45deg);
+    background-color: yellowgreen;
+}
