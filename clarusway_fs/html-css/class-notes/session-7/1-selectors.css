@@ -1,0 +1,157 @@
+
+/* not:Better comment eklentisi yüklediginizde yorumun basina 
+* koyunca yesil
+! koyunca  kirmizi
+? mavi
+todo koyunca turuncu renkte görünür */
+
+/* ? selectors
+
+*:üniversal body+html dahil her elementi secer
+not:alttaki üsttekini ezer
+h1:element adi ile secilebilir
+.ortala:class secici
+#name:id secici
+
+* not:
+1-ayni elemana inline,internal,external da farkli özellikler atanirsa inline daki gecerli olur 
+2-internal ve externalda ayni elemente farkli özellik verilmisse en özel olan baskindir o gecerli olur
+3-ayni yerde birden fazla yerde farkli özellik verilmisse en alttaki gecerli olur */
+/* nav ul li {} = .navbar ul li{} = nav.navbar ul li{} bu 3 yazilimda nav icindeki tüm ul ler icindeki tüm li elementlerini secer 
+nav .navbar(nav in icindeki class i navbar olan)!= nav.navbar(class i navbar olan nav) bir birine esit degildir) */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: red;
+}
+nav.menu {
+    background-color: grey;
+    width: 150px; /*nav kutumuzun genisligi*/
+}
+
+nav.menu .list{
+    list-style-type:'🎁'; /*listenin basindaki sekli degistirmek icin*/
+    /* windows + . emojiler gelir,tirnak icinde yazmalisin */
+    padding: 0;
+    list-style-position: inside; /*simgeler inide dersek icerde outside dersek disarda kalir*/
+}
+nav.menu ul li a {
+text-decoration: none; /*linklerin altindaki cizgileri kaldirmak icin*/
+color: white;
+}
+
+nav.menu .list .aktif {
+    background-color: black;
+}
+/* anasayfa satirinin özelliklerini degistirmek icin class ata ve onla degistir  yada asagidaki gibi child ilede verebiliriz*/
+/* nav.menu .list li:first-child, nav.menu .list li:last-child{
+    background-color: black;
+} */
+/* nav.menu .list li:first-child,li:last-child,li:nth-child(3){
+    background-color: black;
+} */
+/* nav.menu .list li:nth-child(even){
+    background-color: purple;
+} */
+
+nav.menu ul li:hover a {  /*birsey hover oldugunda diger bir seyi degistirmek icin bu yol izlenir li:hover oldugunda anin rengini degistir */
+    color: yellow;
+}
+
+
+nav.menu ul li:hover{
+    background-color: red;
+}
+nav.menu .list .aktif:hover { 
+    background-color: red;
+}
+nav.menu .list li:last-child::after{
+    content: '💖';
+    /**html ile degilde css ile element eklemek istersek ::after ve ::before kullanilir ve content: birsey atamak zorunlu asagidaki gibi*/
+}
+nav.menu .list li:first-child::before{
+    content: '❗';
+}
+/* <i class= "fas fa-user"></i>
+Fas: solid (içi dolu iconlar)
+Fab: brand (markalar)
+fa-user:Icon */
+nav.menu .list li:first-child::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: green;
+    content: '\f0c7';
+  }
+  /* https://fontawesome.com/ adresinden unicode al contentin yanina yapistir
+  https://cdnjs.com/libraries/font-awesome    linkindeki kodu de htmlde title altina yapistir 
+  font-family vermek zorundayiz yoksa calismaz*/
+  
+/* .navbar ul,
+.navbar a{
+
+}
+birden fazla elemente ayni özellikleri vermek istersek selectörler arasina virgül koyuyoruz üst satirda oldugu gibi*/
+
+/* *pseudo siniflari
+ *:active
+Üzerine tıklanan linkleri seçer
+*:hover
+Üzerine fare ile gelinen linkleri seçer
+*:visited
+Ziyaret edilmiş linkleri seçer
+*:focus
+Aktif durumda olan form elemenlarını
+seçer
+*:checked 
+İşaretlenmiş checkbox ve radio
+butonları seçer
+*:first child 
+İlk çocuk elemanı seçer
+*:last-child
+Son çocuk elemanı seçer
+*:nth child(n) (odd) tekleri,(even) ciftleri
+n. çocuk elemanı seçer
+*html ile degilde css ile element eklemek istersek ::after ve ::before kullanilir ve content: birsey atamak zorunlu asagidaki gibi
+ul li::before{
+font-family:"Font Awesome 5 Free";
+font-weight: 900;
+content:f054";
+}
+
+*::after
+Bir elementin hemen sonrasına
+bir içerik veya stil eklemek için
+kullanılır
+*::before
+Bir elementin hemen öncesine bir içerik veya stil eklemek için kullanılır */
+
+
+/*!kutu class'i icindeki tüm p elementlerini secer*/
+.kutu p{
+    color: green;
+
+}
+/*!parent'i kutu olan tüm p elementlerini secer*/
+.kutu >p{
+    color:purple;
+}
+
+/*!h2 elementi kapatildiktan sonraki ilk p elementini secer*/
+h2 + p{
+   background-color: pink;
+}
+
+/*!h2 elementi kapatildiktan sonraki tüm p elementini secer*/
+
+h2 ~ p{
+    background-color: yellowgreen;
+
+}
+
+/* !+:Bir element ten hemen sonra gelen ilk elemeni seçer. Örnekte div elementi kapandıktan sonra gelen ilk a elementini seçer. Eğer div den hemen sonra a elementi yoksa hiçbir şey seçmez.
+div + a { .... } */
+
+/* !Bir element ten hemen sonra gelen elementleri seçer. Örnekte active class ına sahip a elementinden sonra gelen tüm a elementlerini seçer.
+a.active ~ a { .... } */

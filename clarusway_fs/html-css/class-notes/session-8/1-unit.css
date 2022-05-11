@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+html {
+  font-size: 20px;
+  /*!Aksi belirtilmediği sürece default font-size genelde 16px'e eşittir */
+  /* 1em = 16px */
+}
+body{
+    width: 400vh;
+}
+
+.abs{
+    background-color: aqua;
+    width: 10mm;
+    width: 10cm;
+    width: 100px;
+}
+
+.div2{
+    background-color: tomato;
+    width: 50%; 
+    height: 50%;
+     /* div2 ye göre 50% */
+}
+/* ?üstteki dive verdigimiz özellik child lere da etki eder */
+
+.div3{
+     /* div2 ye göre 50% */
+    background-color: violet;
+    width: 50%;
+    height: 50%;
+
+}
+/* % deger parentten alir
+body nin default degeri olmadigindan ona göre göreceli deger veremeyiz ama biz  body e vh veya px gibi sabitbir deger atarsak altindaki o degere göre  % yükseklik alabilir */
+
+.div4 {
+  background-color: yellowgreen;
+  width: 50vw;
+  height: 20vh;
+}
+/*! viewport ölçü birimleri parent'ın büyüklüğü ile ilgili değildir. Sadece tarayıcının görülebilir alanına göre oranlama yapar.  */
+
+.div5 {
+  font-size: 1em; /* 20px */
+}
+
+.div6 {
+  font-size: 2em; /* 40px */
+}
+
+.div7 {
+  font-size: 0.5em; /* 20px */
+}
+
+.div8 {
+  font-size: 2rem; /* 40px */ 
+}
+
+.div9 {
+  font-size: 3rem; /* 60px */
+}
+
+/* !not:ic ice olan seylerin birbirine gore fontlarin buyuyup kuculmesi gerekiyorsa em kullanin. Ama genel itibariyle rem kullanacagiz zira parent'a gore degil belli bir esas (root) alarak olceklendirecegiz cogunlukla */

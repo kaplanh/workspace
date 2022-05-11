@@ -7,17 +7,22 @@
  <title>Document</title>
 
  <style>
+     /* todo margin verdigimizde diger kutular ile arasi aciliyordu ve kutunun boyutu degismiyordu padding de content ile border in arasi aciliyor dolayisiyla kutu büyüyor */
 #first{
 
-background-color: orange;
+background-color:orange;
 /* padding-top:50px;
 padding-right: 30px;
 padding-bottom: 20px;
 padding-left: 40px */
-padding:50px 30px 20px 40px;
+padding:50px 30px 20px 40px;  <!--?üst-sag-alt-sol-->
 margin:20px;
-height:50px;
+height:50px;  
+/* eger ben yaziya height vermezsem ne kadar yazi yazarsam benim kutum o kadar büyür
+ama ben height verirsem o zaman height den daha cok yazi olursa tasar ve kutunun disina cikarpadding lerde hikaye olur yaziya yer kalmadiki padding'e yer kalsin
+bu sorunu box-sizing:border-box ile cözüyoruz*/
 }
+
 
 #second{
  background-color:crimson;

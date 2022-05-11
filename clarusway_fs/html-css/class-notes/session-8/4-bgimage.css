@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header.banner .bg{
+    background-image: url('./assets/img/tree.jpg');
+}
