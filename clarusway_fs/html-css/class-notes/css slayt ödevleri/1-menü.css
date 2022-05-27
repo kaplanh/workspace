@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+ul{   
+    background-color: lightgray; 
+    font-family: 'Poppins', sans-serif;  
+    text-align: center;  
+    width:200px ;
+    height: 220px;
+    margin:50px 50px;
+    
+    
+    
+    
+    
+}
+ul li {
+list-style-type: none;
+padding: 10px 20px 15px 20px;
+
+
+}
+
+.aktif{
+    background-color: black;
+    color: white;
+    padding: 20px 20px 15px 10px;
+    
+    
+
+}
+
+
+

@@ -1,0 +1,25 @@
+body{
+    background-color:coral;
+    font-size: 20px;
+}
+.box{
+    font-size:1.2rem ;
+    width: 400px;
+    border: 2px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.box:nth-child(1){
+    opacity: 0.1; /*deger 0'a yakalstikca kutunun icindeki tüm elementlerin renkleri solar*/
+    background-color: aqua;
+
+}
+
+.box:nth-child(2){
+    background-color:hsla(200deg, 50%, 50%,1);
+    color: rgba(20, 60,200, .1);
+    
+}
+/*!hsla ve rgba ile yazi background gibi tek tek elemanlara etki ederken opacity ile tüm dive etki ediyoruz*/

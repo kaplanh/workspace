@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: yellowgreen;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.container div {
+  width: 5rem;
+  height: 5rem;
+  background-color: violet;
+  margin: 1rem;
+}

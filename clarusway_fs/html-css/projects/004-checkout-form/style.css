@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-top: 35px;
+  color: black;
+}
+h2 {
+  color: black;
+}
+.container {
+  color: #828282;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+input {
+  border: none;
+  outline: none;
+  width: 91%;
+  height: 2rem;
+}
+
+.input {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0.6rem 0;
+}
+
+i {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.mail,
+.name {
+  margin-top: 1rem;
+}
+.contact,
+.shipping {
+  margin-bottom: 3rem;
+}
+
+footer {
+  width: 100px;
+  margin: auto;
+}
+footer button {
+  height: 2.2rem;
+  width: 5rem;
+}
+.last {
+  display: flex;
+}
+
+.turkey {
+  width: 7.7rem;
+  margin-right: 1rem;
+}
+
+.turkey i {
+  position:absolute;
+  padding: 5px 0px 9px 0;
+}
+select {
+  width: 8rem;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+.box {
+  /* padding:5px  30px; */
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+#country {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 2rem;
+}
+.posta {
+  width: 18rem;
+}
+.info {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.info input {
+  width: 5%;
+  height: 1rem;
+  margin-right: .7rem;
+}
+
+footer button {
+  margin-top: 1.2rem;
+  margin-left: -20px;
+  height: 2.8rem;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #f2994a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.shopping {
+  background-color: #eeeeee;
+  margin-left: 45px;
+  height: 420px;
+  width: 22rem;
+  border-radius: 10px;
+  color: #4e5150;
+}
+img {
+  width: 100px;
+  height: 120px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.product {
+  display: flex;
+  padding: 1rem;
+}
+.vintage,
+.levi {
+  margin: 0.1rem 1.2rem 0.3rem 1.2rem;
+  font-weight: 700;
+}
+.vintage p,
+.levi p {
+  margin-top: 10px;
+}
+del {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 0.3rem;
+}
+span {
+  color: #f2994a;
+}
+.count {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 102px;
+  height: 32px;
+  border: 1px solid #888888;
+  border-radius: 5px;
+}
+.count i {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  margin-top: -0.3px;
+}
+.count button {
+  padding: 5px;
+}
+.one {
+  border: none;
+}
+.common {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #888888;
+  margin-bottom: 8px;
+}
+.product-last {
+  margin-top: 30px;
+  padding: 1rem;
+  color: #000000;
+}
+
+@media screen and (max-width: 675px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .shopping {
+    margin: 50px auto 10px auto;
+    width: 25rem;
+  }
+  input {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 876px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shopping {
+    margin: 50px auto 10px auto;
+  }
+}

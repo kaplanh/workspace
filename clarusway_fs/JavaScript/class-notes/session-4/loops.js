@@ -1,4 +1,4 @@
-console.log('******* LOOPS ********');
+// console.log('******* LOOPS ********');
 
 // * =======================================================
 // *                     DÖNGÜLER
@@ -47,8 +47,8 @@ console.log('******* LOOPS ********');
 
 //? Örnek: Dışarıdan girilen sayının Asal olup olmadığını tespit ederek sonucu yazdıran programı yazınız.
 
-// Çözüm-1
-// let x = prompt('lütfen bir sayı');
+// !Çözüm-1
+// let x = prompt('lütfen bir sayı giriniz');
 // let sayac = 0
 // for(let i =2; i < x; i++){
 //   if (x%i == 0) {
@@ -63,7 +63,7 @@ console.log('******* LOOPS ********');
 // }
 
 
-//Çözüm-2
+//!Çözüm-2
 // let x = prompt('lütfen bir sayı');
 // for(let i =2; i < x; i++){
 //   if (x%i == 0) {
@@ -73,6 +73,24 @@ console.log('******* LOOPS ********');
 //     console.log(`Yazdıgınız sayı ${x} asaldır`);
 //   }
 // }
+
+
+// ! Çözüm-3
+// let x = +prompt("please enter a number:");
+// prime = "";
+// let counter = 0;
+// for (i = 2; i < x; i++) {
+//   if (x % i == 0) {
+//     counter++;
+//   }
+// }
+// if (counter == 0) {
+//   prime = `${x} is a prime number`;
+// } else {
+//   prime = ` ${x} is not a prime number`;
+// }
+// console.log(prime);
+
 
 
 // const n = prompt("enter n number");
@@ -138,7 +156,46 @@ console.log('******* LOOPS ********');
 //     } while (not < 0 || not > 100);
 //     console.log("Girdiginiz not", not)
 
+
+// let not;
+// do {
+//   not = prompt("Enter your score");
+//   console.log(not);
+//   if (not == "q" || not == "Q") {
+//     console.log("Programdan çıktı");
+//     break;
+//   }
+// } while (not > 0 && not < 100);
+
 //? ÖDEV: Klavyeden Q karakteri girilene kadar not girişi yapan bir programı döngü kullanarak yazınız.
+// ! Çözüm-1
+// let grade;
+// do {
+//   grade = prompt("Enter your score");
+//   if (grade < 0 || grade > 100) {
+//     alert("Please enter a grade between 0-100");
+//   } else {
+//     console.log(`Your grade is ${grade}`);
+//   }
+// } while (grade.toLowerCase() !== "q");
+
+
+
+  // let word = prompt('Enter a word:')
+    function my_function(word){
+       //console.log(word);
+       let b=word.split("");
+       let c=b.reverse().join("");
+       return c;
+
+    }
+for (let i=0;i<=5;i++) {
+    let word=prompt("Enter a word");
+    console.log(`Girilen kelime ${word} tersten yazimi :`+my_function(word));
+}
+
+
+
 
 
 
