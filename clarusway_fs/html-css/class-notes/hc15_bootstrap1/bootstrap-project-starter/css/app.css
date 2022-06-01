@@ -1,0 +1,121 @@
+:root {
+  --red: #dc3545;
+}
+
+/*! --------------- 1- NAVBAR ------------------ */
+
+
+
+/*! --------------- 2- CAROUSEL ---------------- */
+.carousel-inner{
+  height: 100vh;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-caption  button{
+  width: 7rem;
+}
+
+
+.car-1 {
+  background-image: url(../img/slider1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.car-2 {
+  background-image: url(../img/slider2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.car-3 {
+  background-image: url(../img/slider3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.carousel-indicators{
+  top: 80%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+/*! --------------- 3- ABOUT SECTION ----------- */
+#instructors .card:hover {
+  transition: 1s;
+}
+
+#instructors .card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.socials i {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  opacity: .5;
+}
+
+/*! ------------ 4- STUDENTS SECTION ----------- */
+
+/*! ------------ 5- COURSES SECTION ------------- */
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #bb2d3b;
+  border: none;
+}
+
+.tab-content img {
+  max-width: 100%;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+/*! ------------ 6- CONTACT SECTION ------------ */
+
+/*! ---------------- 7- FOOTER --------------- */
+
+footer i {
+  cursor: pointer;
+  color: white;
+  transition: 1s;
+}
+
+footer i:hover {
+  cursor: pointer;
+  color: #bb2d3b;
+}
+
+.return-top{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  bottom: 20px;
+  right: 20px;
+  background-color:#bb2d3b;
+  border-radius: 50%;
+}
+
+.return-top i{
+  color: white;
+}
+.return-top:hover i{
+  color: yellow;
+}

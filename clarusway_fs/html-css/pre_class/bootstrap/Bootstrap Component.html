@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+<!-- *List & List GroupLesson -->
+<!-- *Unstyled -->
+<!-- !Liste öğelerindeki varsayılan liste stilini ve sol kenar boşluğunu kaldırın (yalnızca acil çocuklar). Bu, yalnızca acil alt liste öğeleri için geçerlidir; yani, herhangi bir iç içe liste için de sınıfı eklemeniz gerekir. -->
+
+<ul class="list-unstyled">
+  <li>This is a list.</li>
+  <li>It appears completely unstyled.</li>
+  <li>Structurally, it's still a list.</li>
+  <li>However, this style only applies to immediate child elements.</li>
+  <li>Nested lists:
+    <ul>
+      <li>are unaffected by this style</li>
+      <li>will still show a bullet</li>
+      <li>and have appropriate left margin</li>
+    </ul>
+  </li>
+  <li>This may still come in handy in some situations.</li>
+</ul>
+<br><br><br>
+
+
+<!-- *Inline -->
+
+<!-- !Bir listenin madde işaretlerini kaldırın ve iki sınıfın bir kombinasyonu ile biraz hafif kenar boşluğu uygulayın .list-inline   ve .list-inline-item. -->
+
+<ul class="list-inline">
+  <li class="list-inline-item">This is a list item.</li>
+  <li class="list-inline-item">And another one.</li>
+  <li class="list-inline-item">But they're displayed inline.</li>
+</ul>
+
+<!-- *listgroup -->
+<!-- !Liste grupları, bir dizi içeriği görüntülemek için esnek ve güçlü bir bileşendir. Bunları, içindeki hemen hemen her içeriği destekleyecek şekilde değiştirin ve genişletin. -->
+
+<!-- *Basic List Groups -->
+<!-- !En temel liste grubu, liste öğeleri içeren sırasız bir listedir. Temel bir liste grubu oluşturmak için class ile bir <ul>öğe ve class .list-group  ile <li>öğeler kullanın .list-group-item. -->
+
+    <ul class="list-group ">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ul>
+  <br><br><br>
+
+  <!-- *Active items(gecerli ögeler)-->
+  <!-- !active Geçerli öğeyi vurgulamak için kullanın  -->
+
+  <ul class="list-group">
+  <li class="list-group-item active">Active item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ul>
+
+<br><br><br>
+
+<!-- *Disabled items-Devre dışı bırakılan öğeler -->
+<!-- !Devre dışı görünmesini sağlamak için bir .list-group-öğesine .disabledekleyin -->
+
+<ul class="list-group">
+  <li class="list-group-item active ">Active item</li>
+  <li class="list-group-item disabled">Second item</li>
+  <li class="list-group-item">Third item</li>
+
+  <br><br><br>
+  <!-- *List Group With Linked Items-Bağlantılı Öğeleri Olan Liste Grubu -->
+<!-- !Bağlantılı öğeler içeren bir liste grubu oluşturmak için <ul> yerine <div> ve <li> yerine <a> kullanın. -->
+
+<!-- !İsteğe bağlı olarak, fareyle üzerine gelindiğinde gri bir arka plan rengi istiyorsanız .list-group-item-action sınıfını ekleyin. -->
+
+  <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">First item</a>
+  <a href="#" class="list-group-item list-group-item-action">Second item</a>
+  <a href="#" class="list-group-item list-group-item-action">Third item</a>
+</div>
+<br><br><br>
+
+
+
+<!-- *Horizontal List Groups-yatay liste gruplari -->
+<!-- !Liste öğelerinin dikey yerine yatay olarak görüntülenmesini istiyorsanız (üst üste değil yan yana), .list-group-horizontalsınıfı 'ye ekleyin .list-group. -->
+
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+  <li class="list-group-item">Fourth item</li>
+</ul>
+
+<br><br><br>
+
+<!--* Contextual Classes-Bağlamsal Sınıflar -->
+
+<!-- !Liste öğelerini renklendirme sınıfları şunlardır -->
+<!-- !list-group-item-success, list-group-item-secondary, list-group-item-info, list-group-item-warning, .list-group-item-danger, .list-group-item-primary, list-group-item-dark and list-group-item-light. -->
+
+
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">Success item</li>
+  <li class="list-group-item list-group-item-secondary">Secondary item</li>
+  <li class="list-group-item list-group-item-info">Info item</li>
+  <li class="list-group-item list-group-item-warning">Warning item</li>
+  <li class="list-group-item list-group-item-danger">Danger item</li>
+  <li class="list-group-item list-group-item-primary">Primary item</li>
+  <li class="list-group-item list-group-item-dark">Dark item</li>
+  <li class="list-group-item list-group-item-light">Light item</li>
+</ul>
+<br><br><br><br>
+
+<!-- *Alerts -->
+<!-- !Bootstrap, önceden tanımlanmış uyarı mesajları oluşturmanın kolay bir yolunu sağlar Uyarılar sınıfla birlikte oluşturulur .alert, ardından bağlamsal sınıflardan biri gelir .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark.-->
+
+
+<div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> Indicates an important action.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> Indicates a slightly less important action.
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> Dark grey alert.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> Light grey alert.
+  </div>
+
+  <br><br><br>
+  <!--* Alert Links-Uyarı Bağlantıları -->
+  <!-- !"Eşleşen renkli bağlantılar" oluşturmak için uyarı kutusu içindeki herhangi bir bağlantıya uyarı bağlantısı sınıfını ekleyin. -->
+
+  <div class="alert alert-success">
+    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+
+<br><br><br>
+<!-- *Additional Content-ek icerik -->
+
+<!-- !Uyarılar ayrıca başlıklar, paragraflar ve ayırıcılar gibi ek HTML öğeleri içerebilir. -->
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <hr>
+  <p class="mb-0 alert alert-danger">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+
+<br><br><br>
+<!-- *Closing Alerts-Kapanış Uyarıları -->
+<!--! Uyarı JavaScript eklentisini kullanarak, satır içi herhangi bir uyarıyı kapatmak mümkündür. İşte nasıl: - Uyarının sağına ekstra dolgu ekleyen alert-dismissible ve kapat düğmesini konumlandıran bir kapat düğmesi ve  data-bs-dismiss="alert" sınıf ekleyin . - Kapat düğmesine JavaScript işlevini tetikleyen özelliği ekleyin. Tüm cihazlarda uygun davranış için <button> öğeyi onunla birlikte kullandığınızdan emin olun . - Kapatırken uyarıları canlandırmak için ve sınıflarını eklediğinizden emin olun ...fade.show -->
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br>
+</ul>
+</body>
+</html>

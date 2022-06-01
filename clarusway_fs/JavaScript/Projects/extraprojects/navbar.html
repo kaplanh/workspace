@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: yellow;
+        }
+
+        .left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        span{
+            display: none;
+            cursor: pointer;
+        }
+
+        li{
+            display: inline;
+            padding: 1rem;
+            list-style-type: none;
+        }
+
+        @media (max-width:1000px){
+            .nav{
+                flex-direction: column;
+            }
+
+            ul{
+                display: none;
+            }
+
+            ul.gorunur{
+                display: block;
+            }
+
+            span{
+                display: block;
+            }
+
+            .left{
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="left">
+            <h1>LOGO</h1>
+            <span>&#129409;</span> 
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">JS</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        let lion = document.querySelector('span');
+        let List = document.querySelector('ul');
+
+        lion.addEventListener('click', () =>{
+
+            List.classList.toggle('gorunur')
+        })
+
+        window.addEventListener('resize', () =>{
+            if(window.innerWidth > 1000){
+                List.classList.remove('gorunur');
+            }
+            
+        })
+
+
+    </script>
+</body>
+</html>

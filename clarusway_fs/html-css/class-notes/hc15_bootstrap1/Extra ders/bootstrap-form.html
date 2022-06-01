@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body class="container">
+      <!-- basit yapıda bir form örneği type bölümü talep edilen işleve göre seçilmelidir. -->
+    <h1 style="color:red"> form</h1>
+    <form class="container mt-4">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br><br> <br><br><br><br>
+      <!-- form-text hem block hemde inline tanımlama yapılabilir.ona göre tag seçilmelidir. -->
+      <!-- block -->
+      <h1 style="color:red"> block</h1>
+    <div>
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div>
+    </div>
+    <br><br><br><br><br><br>
+    <!-- inline -->
+    <h1 style="color:red"> inline</h1>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Password</label>
+        </div>
+        <div class="col-auto">
+          <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text">
+            Must be 8-20 characters long.
+          </span>
+        </div>
+      </div>
+        <br><br><br><br><br><br>
+        <!-- disable form -->
+        <h1 style="color:red"> disable form</h1>
+        <form>
+            <fieldset disabled>
+              <legend>Disabled fieldset example</legend>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Disabled input</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+              </div>
+              <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                <select id="disabledSelect" class="form-select">
+                  <option>Disabled select</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled >
+                  <label class="form-check-label" for="disabledFieldsetCheck">
+                    Can't check this
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+          </form>
+            <br><br><br><br><br><br>
+          <!-- form control  -->
+          <h1 style="color:red"> form control</h1>
+          <div class=" mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class=" row mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class=" form-control col-3" id="exampleFormControlTextarea1" placeholder="text area bölümünün satır sayısı row ile verilir" rows="3" ></textarea>
+          </div>
+          <br><br><br><br><br><br>
+          <!-- sizing  lg ve sm değerleri verilerek input alanının boyutları ayarlanır-->
+          <h1 style="color:red"> sizing</h1>
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+            <input class=" form-control" type="text" placeholder="Default input" aria-label="default input example">
+            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+            <br><br><br><br><br><br>
+            <!-- Readonly belirlenen girdi değerinin değiştirilmemesi için kullanılır. -->
+            <h1 style="color:red"> readonly</h1>
+            <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+            <br><br><br><br><br><br>
+            <!-- Readonly plain text Formunuzda düz metin olarak biçimlendirilmiş <input readonly> öğelerine sahip olmak istiyorsanız, varsayılan form alanı stilini kaldırmak ve doğru kenar boşluğunu ve dolguyu korumak için .form-control-plaintext sınıfını kullanın. E-posta-->
+            <h1 style="color:red"> form-control-plaintext</h1>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+              </div>
+                <br><br><br><br><br><br>
+                <!-- File input -->
+                <h1 style="color:red"> file input</h1>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                    <input class="form-control" type="file" id="formFileDisabled" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Small file input example</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div>
+                    <label for="formFileLg" class="form-label">Large file input example</label>
+                    <input class="form-control form-control-lg" id="formFileLg" type="file">
+                  </div>
+                  <br><br><br><br><br><br>
+                  <!-- Color -->
+                    <h1 style="color:red"> color</h1>
+                    <label for="exampleColorInput" class="form-label">Color picker</label>
+                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563D7C" title="Choose your color">
+                    <br><br><br><br><br><br>

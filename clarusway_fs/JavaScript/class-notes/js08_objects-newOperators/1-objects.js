@@ -216,10 +216,17 @@ console.log(kücük);
 //* Ornek6: Meslegi developer olanlarin isim ve yaslarini yeni bir Obje olarak
 //* yeni diziye saklayiniz.
 
-const developers = kisiler
-  .filter((kisi) => kisi.job == "developer")
-  .map((kisi) => `NAME:${kisi.name} SURNAME:${kisi.surname} AGE:${kisi.age}`);
-console.log(developers);
+
+
+const dev = kisiler.filter((kisi) => kisi.job == 'developer').map((kisi) =>({ name:kisi.name ,age:kisi.age })
+);
+console.log(dev);
+
+
+// !arrayde saklamak icin
+//   const developers = kisiler.filter((kisi) => kisi.job == "developer")
+//     .map((kisi) => `NAME:${kisi.name} SURNAME:${kisi.surname} AGE:${kisi.age}`);
+// console.log(developers);
 
 //* Ornek7: kisilerin ortalama yasini hesaplayiniz.
 const ortYas = kisiler.reduce((t, kisi) => t + kisi.age, 0) / kisiler.length;

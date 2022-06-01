@@ -1,0 +1,143 @@
+<!-- Datalists .... Veri listeleri, bir <input> içinden erişilebilen (ve otomatik olarak tamamlanabilen) bir <option> grubu oluşturmanıza olanak tanır. Bunlar <select> öğelerine benzer, ancak daha fazla menü stili sınırlaması ve farklılığı ile birlikte gelir. Çoğu tarayıcı ve işletim sistemi <datalist> öğeleri için bir miktar destek içerse de, stilleri en iyi ihtimalle tutarsızdır. -->
+                    <h1 style="color:red"> datalist</h1>
+                        <label for="exampleDataList" class="form-label">Datalist example</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                        <br><br><br><br><br><br>
+                        <!-- Select -->
+                        <h1 style="color:red"> select</h1>
+                        <select class="form-select" aria-label="Default select example">
+                            <option >Open this select menu</option>
+                            <option selected value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                            <br><br><br><br><br><br>
+                            <!-- size ile kaç tane görüneceğini ayarlıyoruz -->
+                            <h1 style="color:red"> size (kaç sıra görünsün)</h1>
+                        <select class="form-select" size="3" aria-label="size 3 select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                            <br><br><br><br><br><br>
+            <!-- checks ve radio -->
+            <h1 style="color:red"> checks ve radio</h1>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+              </div>
+              <br><br><br><br>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+              </div>
+                <br><br><br><br><br><br>
+                <!-- Switches -->
+                <h1 style="color:red"> switches</h1>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                  </div>
+                    <br><br><br><br><br><br>
+     <!-- Inline Herhangi bir .form-check'e .form-check-inline ekleyerek onay kutularını veya radyoları aynı yatay satırda gruplayın. -->
+        <h1 style="color:red"> inline</h1>
+     <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+        <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+      </div>
+      <br><br><br><br><br><br>
+      <!-- Reverse .form-check-reverse değiştirici sınıfıyla onay kutularınızı, radyolarınızı ve anahtarlarınızı karşı tarafa koyun.. -->
+        <h1 style="color:red"> reverse</h1>
+        <div class="form-check form-check-reverse">
+            <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+            <label class="form-check-label" for="reverseCheck1">
+              Reverse checkbox
+            </label>
+          </div>
+          <div class="form-check form-check-reverse">
+            <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+            <label class="form-check-label" for="reverseCheck2">
+              Disabled reverse checkbox
+            </label>
+          </div>
+          <div class="form-check form-switch form-check-reverse">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+            <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+          </div>
+            <br><br><br><br><br><br>
+ <!-- Toggle buttons <label> öğelerinde .form-check-label yerine .btn stillerini kullanarak düğme benzeri onay kutuları ve radyo düğmeleri oluşturun. Bu geçiş düğmeleri ayrıca gerekirse bir düğme grubunda gruplandırılabilir. -->
+    <h1 style="color:red">Toggle buttons</h1>
+    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+    <label class="btn btn-primary" for="btn-check">Single toggle</label>
+    <br><br><br><br><br><br>
+    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+        <label class="btn btn-secondary" for="option1">Checked</label>
+        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+        <label class="btn btn-secondary" for="option2">Radio</label>
+        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+        <label class="btn btn-secondary" for="option3">Disabled</label>
+        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+        <label class="btn btn-secondary" for="option4">Radio</label>
+        <br><br><br><br><br><br>
+        <!-- Outlined styles -->
+        <h1 style="color:red">Outlined styles</h1>
+        <div>
+            <input type="checkbox" class="btn-check " id="btn-check-outlined" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+            <input type="checkbox" class="btn-check " id="btn-check-2-outlined" checked autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+            <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+            <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+            <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+        </div>
+        <br><br><br><br><br><br>
+        <!-- range  aralık vermek için min ve max kullanılır. default değerler 0 ve 100.. step kullanarak atlama değerlerini ayarlıyoruz  -->
+        <h1 style="color:red">range</h1>
+        <label for="customRange3" class="form-label">Example range</label>
+        <input type="range" class="form-range" min="0" max="1" step="0.5" id="customRange3">
+        <br><br><br><br><br><br>
