@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+h1{
+    color: white;
+    margin: 50px auto;
+    background-color:magenta;
+}
+
+#todo{
+    width: 60vw;
+    border:2px solid magenta;
+    margin: 0;
+    font-size: xx-large;
+    color:magenta;
+    
+
+}
+
+/* !input un icine bastigimda cikan siyahligi kaybetmek icin */
+#todo:focus{
+    outline: none;
+}
+
+
+#btn{
+    width: 20vw;
+    background-color: magenta;
+    opacity: 0.4;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+    border:2px solid deeppink;
+    font-size: xx-large;
+    
+
+}
+#btn:hover{
+    opacity: 0.7;
+}
+h2{
+    color: deeppink;
+}
+
+.container{
+    border-bottom: 2px dashed magenta;
+    margin:10px 50px;
+    height: 50vh;
+}
+
+
+/* *sorularim  */
+1- butonla inputu nasil yan yapistirabilirim
+2-input'un icindeki yazi rengini nasil magenta yapabilirim
+3-input un icine bastigimda cikan siyahligi nasil yok edebilirim veya baska bir renk shadow nasil uygularim

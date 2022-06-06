@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./örnek.css">
+  </head>
+  <body>
+
+
+<!-- *Add new task
+*Delete task
+*Mark task as completed
+*Edit task
+*Sort tasks by date
+*Search tasks -->
+
+    <div class="container text-center ">
+        <h1>TO-DO LIST</h1>
+        <div class="row add-element ">
+            <input type="text" id="todo" placeholder="Add todo here...">
+            <button id="btn">&plus;</button>
+        </div>
+        <h2 class="text-start  m-4 mt-5">YOUR TODOS</h2>
+        <div class="element-list">
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <script src="./örnek.js"></script>
+  </body>
+</html>
