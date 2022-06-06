@@ -2,7 +2,26 @@
 //*             DOM SELECTORS
 //*===========================================
 
+// dom agacinin kökünde < html > (node root) vardir
+//     < html > elemaninin 2 cocuk elemani(child node'u) vardir < head >, <body>
+//     not: her elemente bir node(dügüm) denir.
+
 console.log('***** SELECTORS *****');
+// HTML elemanlarini secmek icin asagidaki metodlar kullanilir
+// document.getElementById('id ismi')//en hizli olan bu
+// document.getElementsByTagName('tag ismi')
+// document.getElementsByClassName('class isim')
+
+// document.querySelector('CSS secisi')/#id veya.class,tag ismi ile karsilastigi ilk elemani ceker
+// querySelectorAll('CSS secisi')/#id veya.class,tag ismi ile karsilastigi tüm elemanlari ceker
+
+// önemli not:document.getElementsByTagName('tag ismi')
+// document.getElementsByClassName('class isim') ile cagirdigimizda birden fazla eleman varsa bu HTML collection döndürür
+
+// querySelectorAll('CSS secisi') node list döndürür
+//! HTML collectionlara array method larini uygulayamazken 
+//! node list lere  (forEach,filter,map,reduce gibi) array methodlarini uygulayabilirsiniz 
+
 
 //*===========================================
 //*            GETELEMENTBYID()
@@ -44,9 +63,15 @@ img[0].style.transform = 'rotate(-5deg)';
 //* EXAMPLE-4
 //* ---------------
 const par = document.getElementsByClassName('par');
-// par[0].textContent = 'DOM Manipülasyonu';
-// par[0].innerText = 'DOM Manipülasyonu';
+// par[0].textContent = 'DOM Manipülasyonu'; 0.elemanin html ine yazar
+// par[0].innerText = 'DOM Manipülasyonu'; 0.elemanin html ine yazar
 par[0].innerHTML += ' <a href="https://www.clarusway.com">Clarusway</a>';
+
+// not1:innerHTML ile hem yazi hemde  tag eklenebilir onu render - isler ve ekler 
+
+// not2:eskisini silip yerine yazar üzerine yazmasini istemiyorsak += yazariz
+
+// not3:eskisinin yanina degilde altina yazmasini istiyorsak basa <br> yazabiliriz
 
 //* ========================================
 //*              QUERYSELECTOR()
