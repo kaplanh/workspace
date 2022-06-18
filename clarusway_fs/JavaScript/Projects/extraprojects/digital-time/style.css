@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'digitalFont'; /*a name to be used later*/
+    src: url('./ds_digital/DS-DIGIT.TTF'); /*URL to font*/
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#container {
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 100px;
+    font-weight: 900;
+    font-family: digitalFont;
+    letter-spacing: 8px;
+    color: rgb(37, 255, 0);
+}

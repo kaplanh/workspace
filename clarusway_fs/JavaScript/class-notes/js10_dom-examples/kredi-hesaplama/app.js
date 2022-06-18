@@ -1,23 +1,23 @@
-console.log("**** Kredi Hesaplama *******");
-const select = document.querySelector(".form-select");
-const vade = document.querySelector("#vade");
-const tutar = document.querySelector("#tutar");
-const hesaplaBtn = document.querySelector(".btn-dark");
+console.log('**** Kredi Hesaplama *******');
+const select = document.querySelector('.form-select');
+const vade = document.querySelector('#vade');
+const tutar = document.querySelector('#tutar');
+const hesaplaBtn = document.querySelector('.btn-dark');//btn olarakta cagrilabilirdi
 let oran = 0;
 let taksit = 0;
 
-hesaplaBtn.addEventListener("click", (e) => {
+hesaplaBtn.addEventListener('click', (e) => {
   //? preventDefault() event'ın default davranaışı (submit etmek ve formu silmek) engeller
   e.preventDefault();
-  if (select.value === "Konut Kredisi") {
+  if (select.value === 'Konut Kredisi') {
     oran = 1.29;
-  } else if (select.value === "Ihtiyac Kredisi") {
+  } else if (select.value === 'Ihtiyac Kredisi') {
     oran = 1.99;
-  } else if (select.value === "Arac Kredisi") {
+  } else if (select.value === 'Arac Kredisi') {
     oran = 1.79;
   }
   if (!select.value || !vade.value || !tutar.value) {
-    alert("Lutfen Kredi turu, Vade ve tutari giriniz");
+    alert("Lutfen Kredi turu, Vade ve tutari giriniz"); //? !select.value: selectin value si bossa anlamina gelir 
   }
 
   const faiz = oran / 100;
@@ -57,5 +57,5 @@ const sonuclariGoster = () => {
 
 </table>
 
-  `;
+  `; // ₺: tr klavyede alt gr + t ile
 };

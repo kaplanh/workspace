@@ -12,7 +12,7 @@ console.log('***** SELECTORS *****');
 // document.getElementsByTagName('tag ismi')
 // document.getElementsByClassName('class isim')
 
-// document.querySelector('CSS secisi')/#id veya.class,tag ismi ile karsilastigi ilk elemani ceker
+// document.querySelector('CSS secisi')/#id,.class,tag ve section p a  section'un altindaki p nin icindeki a yi ismi ile karsilastigi ilk elemani ceker
 // querySelectorAll('CSS secisi')/#id veya.class,tag ismi ile karsilastigi tüm elemanlari ceker
 
 // önemli not:document.getElementsByTagName('tag ismi')
@@ -67,24 +67,33 @@ const par = document.getElementsByClassName('par');
 // par[0].innerText = 'DOM Manipülasyonu'; 0.elemanin html ine yazar
 par[0].innerHTML += ' <a href="https://www.clarusway.com">Clarusway</a>';
 
-// not1:innerHTML ile hem yazi hemde  tag eklenebilir onu render - isler ve ekler 
+// not1:innerHTML ile hem yazi hemde  tag eklenebilir onu render - isler ve ekler
 
 // not2:eskisini silip yerine yazar üzerine yazmasini istemiyorsak += yazariz
 
-// not3:eskisinin yanina degilde altina yazmasini istiyorsak basa <br> yazabiliriz
+// not3:eskisinin yanina degilde altina yazmasini istiyorsak tirnaktan hemen sonra basa <br> yazabiliriz
+// ' br <a href="https://www.clarusway.com">Clarusway</a>';
+
+//not4:bir elementin yazisini degistireceksek textContent
+// bir HTML kodu yazacaksak innerHtml kullanmak mantikli
 
 //* ========================================
 //*              QUERYSELECTOR()
 //* ========================================
-document.querySelector('title').textContent = 'JS09-DOM ❤️';
+document.querySelector('title').textContent = 'JS09-DOM ❤️';//emoji eklemek icin (windows + . )bas
 
 const myPars = document.querySelectorAll('p');
 console.log(myPars); //? NodeList
 myPars.forEach((p) => console.log(p.innerText));
+// p.textContent bosluklarla birlikte alir düzeni korur
+// p.innerText bosluklari yok sayar sdc yazilari alir
+//p.innerHTML p nin icindeki text ve varsa <a></a> tag i gibi  Html kodu olarak hepsini alir
+
+// ama bunu querySelector ile yapabiliriz cünkü o node list olusturuyor
 
 const myPars1 = document.getElementsByClassName('par');
 console.log(myPars); //? HTML Collection
-
+//!burda foreach() kullanamayiz kullanmak istiyorsak o zaman önce array e döndürmeliyiz bunun 2 yolu var
 //! HTML Collection'dan Array' e çevirme yöntemleri
 //? 1.Array.from()
 const myParsArray = Array.from(myPars1); //? Array.from ile diziye çevirilir.

@@ -7,12 +7,12 @@
 
 // !5MB limiti vardır.
 
-// *localStorage yöntemleri şunlardır:
+// *localStorage yöntemleri :
 // !1-setItem(key, value);localStorage'e yeni bir key/value çifti yerlestirmek için
 // ?örnek: localStorage.setItem("name", "John");
 
 //!2-getItem(key)  localStorage den bir key' in value'sunu almak için
-// ?örnek:localStorage.getItem('name');
+// ?örnek:localStorage.getItem("name");
 
 // !3-removeItem(key);localStorage den bir key/value çiftini kaldırmak için
 // ?örnek:localStorage.removeItem('name');
@@ -20,9 +20,15 @@
 // !4-clear() tüm anahtar/değer çiftlerini temizlemek için
 // ?örnek:localStorage.clear();
 
-// *Uygulamamız aşağıdaki adımlarda çalışacak:
+//*Session Storage
+//!oturum kapatildiginda sessiondaki veriler silinir önemli veriler icin bunu kullanmak lazim  
+//!sayfa yenilendiginde veya baska bir sayfaya gectigimizde sayfa load olur
+//?örnek: sessionStorage.setItem("tasks", loadTasks);
+  
 
-//! 1 - Load tasks - Görevleri yükle: Sayfa yüklendiğinde uygulama, localStorage'da herhangi bir görev olup olmadığını kontrol eder. Herhangi bir görev varsa, bunları gösterecektir.
+// *Uygulama aşağıdaki adımlarda çalışacak:
+
+//! 1 - Load tasks - Görevleri yükle: Sayfa yüklendiğinde uygulama, localStorage'da herhangi bir görev olup olmadığını kontrol eder. Herhangi bir görev varsa, bunları gösterir.
 
 
 // !2 - Add task Görev ekle: Kullanıcı ekle düğmesine tıkladığında, uygulama görevi listeye ekler ve localStorage'da saklar.
@@ -37,39 +43,32 @@
 
 //! 5-Remove task-Görevi kaldır: Kullanıcı çöp kutusu düğmesini tıkladığında, uygulama görevi listeden kaldırır ve ayrıca localStorage'dan kaldırır.
 
-// *Yukarıda bahsedilen görevlerin her biri için bir fonksiyon oluşturmalı ve kullanıcı eylemi gerçekleştirdiğinde onu çağırmalıyız.
+// *Yukarıdaki görevlerin her biri için bir fonksiyon oluşturmalı ve kullanıcı eylemi gerçekleştirdiğinde onu çağırmalıyız.
 
 
 
 // *1-Kullanıcı sayfayı ilk yüklediğinde, localStorage'da herhangi bir görev olup olmadığını kontrol etmemiz gerekiyor. Herhangi bir görev varsa, onu göstermemiz gerekir.
 
-// element.addEventListener(olay, fonksiyon)
-// HTML olayları için bir çok örnek verilebilir
-// •
-// Kullanıcı Fareyi tıkladığında onclick
-// •
-// Bir web sayfası yüklendiğinde onload
-// •
-// Fare bir elemanın üzerine geldiğinde onmouseover
-// •
-// Fare bir elemanın üzerinden ayrıldığında onmouseout
-// •
-// Bir elemanın içeriği değiştiğinde onchange
-// •
-// Bir HTML formu gönderildiğinde onsubmit
-// •
-// Klavyeden bir tuşa basıldığında onkeyup
-//Bir kullanıcı bir giriş alanından ayrıldığında bir JavaScript yürütün  onblur
+//* element.addEventListener(olay, fonksiyon)
+// !HTML olaylarından bir kaci
+// * onclick
+// •Kullanıcı Fareyi tıkladığında
+// *onload
+// •Bir web sayfası yüklendiğinde
+// *onmouseover
+// •Fare bir elemanın üzerine geldiğinde
+// *onmouseout
+// •Fare bir elemanın üzerinden ayrıldığında
+// *onchange
+// •Bir elemanın içeriği değiştiğinde
+// *onsubmit
+// •Bir HTML formu gönderildiğinde
+// *onkeyup
+// Klavyeden bir tuşa basıldığında
+//*onblur
+// Bir kullanıcı bir giriş alanından ayrıldığında 
 
-// *--------------------------------------------------------1 - Uygulama yüklendiğinde tüm görevleri localStorage'dan almak icin ------------------------------------------------------
-// element.addEventListener(olay, fonksiyon)
-window.addEventListener("load", () => {
-  //set item to localStorage
-  localStorage.setItem("tasks", loadTasks);//sen silmedigin müddetce orda kalir
-  //set item to localStorage
-  //* sessionStorage.setItem("tasks", loadTasks);
-  //oturum kapatildiginda sessiondaki veriler silinir önemli veriler icin bunu kullanmak lazim  
-})//sayfa yenilendiginde veya baska bir sayfaya gectigimizde sayfa load olur
+// *1 - Uygulama yüklendiğinde tüm görevleri localStorage'dan almak icin 
 
 window.onload = loadTasks;
 function loadTasks() {
@@ -104,14 +103,14 @@ function loadTasks() {
     // !elemanı id, class, özellik, tür ve değere göre seçmek için kullanılır Eşleşen elemanların listesini döndürür
     const li = document.createElement("li"); //!document.createElement(isim)
     // !Yeni bir eleman oluşturur.
-    li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check" ${
+   li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check" ${
       task.completed ? "checked" : ""
     }>//!element.innerHTML = yeni içerik 
     // !Bir HTML elemanın içeriğini değiştirir
           <input type="text" value="${task.task}" class="task ${
       task.completed ? "completed" : ""
     }" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-          <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
+          <i class="fa fa-trash" onclick="removeTask(this)"></i>`; 
     list.insertBefore(li, list.children[0]);
     //!element.insertBefore(new, existing) veya 
     //!node.insertBefore(new, existing)
@@ -150,7 +149,7 @@ function addTask() {
   // check görev zaten var
   let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
   // check görev zaten var
-  tasks.forEach(todo => {
+  tasks.forEach((todo) => {
     if (todo.task === task.value) {
       alert("Task already exist!");
       task.value = "";
