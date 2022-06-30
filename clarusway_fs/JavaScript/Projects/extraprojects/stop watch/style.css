@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.container {
+    text-align: center;
+
+}
+
+.btn {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: .6rem;
+}

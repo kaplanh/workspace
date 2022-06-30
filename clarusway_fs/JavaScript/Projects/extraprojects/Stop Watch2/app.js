@@ -1,9 +1,9 @@
 const timer = document.getElementById("stopwatch");
 
-var hr = 0;
-var min = 0;
-var sec = 0;
-var stoptime = true;
+const hr = 0;
+const min = 0;
+const sec = 0;
+const stoptime = true;
 
 function startTimer() {
   if (stoptime == true) {
