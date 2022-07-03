@@ -1,5 +1,5 @@
 //* JSX'de stillendirme farklli sekillerde yapilabilr.
-//* 1-) Harici CSS sayfalari ile (index.css, app.css v.b)
+//* 1-) Harici CSS sayfalari ile (index.css, app.css content.css v.b)
 //* 2-) Inline stillendirme ile (style = {{color:"red"}})
 //* 3- )Local veya global degiskenler ile.
 
@@ -10,23 +10,23 @@
 //* Material UI, Styled Component, Sass, Bootstrap v.b harici kutuphaneler kullanilabilir.
 
 // ? Dahili bir resim eklemek icin import yapmak gereklidir.
-import img2 from './img/spring2.jpg';
+import img2 from "./img/spring2.jpg";
 
 //?Harici stillneidmre dosyasi
-import './Content.css';
+import "./Content.css";
 
 const Content = () => {
   //* const deneme = { x: 1 }; => JS
   const imgStyle = {
-    display: 'block',
-    width: '300px',
-    margin: '1rem auto',
+    display: "block",
+    width: "300px",
+    margin: "1rem auto",
   };
   return (
     <div className="content">
       {/* Inline Style */}
-      <h2 style={{ color: 'red' }}>React JS</h2>
-      <p style={{ backgroundColor: 'lightgreen' }}>
+      <h2 style={{ color: "red" }}>React JS</h2>
+      <p style={{ backgroundColor: "lightgreen" }}>
         React, Kullanici arabirimi tasarlamak icin kullanilan bir JS
         kütüphanesidir.
       </p>
