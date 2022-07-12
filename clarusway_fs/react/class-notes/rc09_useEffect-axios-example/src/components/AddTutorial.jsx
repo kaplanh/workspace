@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const AddTutorial = ({ addTutorial }) => {
-  const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [title, setTitle] = useState('');
+  const [desc, setDesc] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addTutorial({ title: title, description: desc });
+    setTitle('');
+    setDesc('');
   };
 
   return (

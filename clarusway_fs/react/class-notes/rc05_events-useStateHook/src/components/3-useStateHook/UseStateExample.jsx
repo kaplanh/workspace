@@ -43,6 +43,15 @@ const UseStateExample = () => {
     setCount(count - 1);
   };
 
+  const incAge = () => {
+    // setInfo(info.age + 1);
+    // console.log(info.age);
+    // setInfo({ name: 'mehmet yilmaz', email: 'my@gmail.com', age: 44 });
+    //? key:Value
+    setInfo({ ...info, age: info.age + 1 });
+  };
+
+  console.log(info);
   return (
     <div className="container text-center mt-4">
       <section>
@@ -63,7 +72,9 @@ const UseStateExample = () => {
         <h2>{info.name}</h2>
         <h3>{info.email}</h3>
         <h3>{info.age}</h3>
-        <button className="btn btn-info">inc age</button>
+        <button onClick={incAge} className="btn btn-info">
+          inc age
+        </button>
       </section>
     </div>
   );
