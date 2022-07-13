@@ -11,14 +11,15 @@
 }
 
 .bars {
-    height: 42rem;
+    height: 41rem;
     width: 5rem;
     background-color: #53c1de;
     position: relative;
     transform: rotate(-45deg);
-    top: -40rem;
-    left: 10rem;
+    top:-40rem;
+    left:10rem;
 }
+
 
 .language-title{
     grid-area:top;
