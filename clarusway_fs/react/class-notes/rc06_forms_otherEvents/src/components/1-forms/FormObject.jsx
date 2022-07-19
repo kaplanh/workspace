@@ -1,16 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const FormObject = () => {
   const [formValues, setFormValues] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
-
-  const [value, setvalue] = useState({
-    username: "",
-    email: "",
-    password: "",
+    username: '',
+    email: '',
+    password: '',
   });
 
   const handleFormValues = (e) => {
@@ -30,7 +24,7 @@ const FormObject = () => {
   };
   return (
     <div>
-      <form style={{ margin: "5rem" }} onSubmit={handleSubmit}>
+      <form style={{ margin: '5rem' }} onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username <span className="text-danger">:{formValues.username}</span>

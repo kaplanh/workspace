@@ -1,4 +1,3 @@
-// import ''./button.css';
 import btnStyle from './buton.module.css';
 
 //* Eğer CSS'deki class adi kebap-case seklinde yazilmis ise

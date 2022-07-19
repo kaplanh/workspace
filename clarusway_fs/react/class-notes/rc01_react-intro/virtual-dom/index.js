@@ -7,7 +7,6 @@ const setTime = () => {
       <p>${new Date().toLocaleTimeString()}</p>
    </div>
 `;
-// yukarda js ile yazdigimiz kodda tüm div güncellenirken altta React ile yazdigimizda sadece ilgili element p kismi degisti iste react bu rendering kismini ciddi kazanim saglar
 
   document.querySelector('.container-1').innerHTML = jsElement;
 

@@ -1,10 +1,11 @@
-import AddTaskForm from "./AddTaskForm";
-import { useState } from "react";
-const Header = ({ tasks }) => {
+import AddTaskForm from './AddTaskForm';
+import { useState } from 'react';
+
+const Header = ({ tasks, setTasks }) => {
   const [show, setShow] = useState(false);
   const [btnStyle, setBtnStyle] = useState({
-    name: "SHOW ADD TASK BAR",
-    bgColor: "purple",
+    name: 'SHOW ADD TASK BAR',
+    bgColor: 'purple',
   });
 
   //! React, default olarak state'leri hemen degistirmeyebilir.
@@ -18,16 +19,16 @@ const Header = ({ tasks }) => {
   const handleShow = () => {
     if (show) {
       setBtnStyle({
-        name: "SHOW ADD TASK BAR",
-        bgColor: "purple",
+        name: 'SHOW ADD TASK BAR',
+        bgColor: 'purple',
       });
     } else {
       setBtnStyle({
-        name: "CLOSE ADD TASK BAR",
-        bgColor: "red",
+        name: 'CLOSE ADD TASK BAR',
+        bgColor: 'red',
       });
-      setShow(!show);
     }
+    setShow(!show);
   };
   console.log(show);
 
@@ -41,7 +42,7 @@ const Header = ({ tasks }) => {
       >
         {btnStyle.name}
       </button>
-      {show && <AddTaskForm tasks={tasks} />}
+      {show && <AddTaskForm tasks={tasks} setTasks={setTasks} />}
     </header>
   );
 };
